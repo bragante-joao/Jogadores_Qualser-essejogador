@@ -1,0 +1,45 @@
+body{
+background-color: rgba(0, 0, 0, 0.89);
+text-align: center;
+align-items: center;
+}
+h1{
+  color:green
+}
+#Jogador{
+  height: 460px;
+  width: 400px;
+
+}
+#oea{
+  margin: auto;
+
+  height: 100px;
+  width: 300px;
+  color: red;
+  
+  
+}
+.eaea{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+#gg {
+  color: white;
+  font: normal 42pt arial;
+  text-align: center;
+  margin-top:200px ;
+}
+#tentativa{  
+  border: 8px double rgba(114,114,110,0.65);
+  border-radius: 17px 17px 17px 17px;
+
+  font: normal 26px arial;
+  background-color: rgb(151, 150, 150);
+  height: 38px;
+  width: 200px;
+}
+input::-webkit-input-placeholder {
+  font-size:16px;
+}

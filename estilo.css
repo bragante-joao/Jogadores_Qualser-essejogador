@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+body{
+  background-image: url(../Mídias/dia-nacional-do-futebol_c.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-size: cover;
+  
+ 
+  
+}
+h1{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+#pad{
+  border-radius: 4%;
+  height: 480px;
+  width: 560px;
+text-align: center;
+margin: auto;
+  background-image: linear-gradient(to right,rgb(138, 134, 134),white); 
+}
+
+#pc {
+  margin-top: 278px;
+}
+#bt{
+  height: 58.3px;
+  width: 115.5px;
+  transition: transform 0.267s ease;
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: 1.7px 1.4px 1.4px 0.1px black;
+}
+#bt:hover{
+  transform: scale(1.12);
+}
