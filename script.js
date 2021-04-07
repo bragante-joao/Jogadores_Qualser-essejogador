@@ -1,3 +1,4 @@
+console.log('Atualização 1!')
 var hosteltex = document.getElementById("ea")
 var hosteltex2 = document.getElementById("oea")
 var nomeJogador, oJogador
@@ -99,5 +100,3 @@ document.addEventListener("keydown", function (event) {
   }
 
 })
-
-
