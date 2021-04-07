@@ -1,4 +1,4 @@
-console.log('Atualização 1!')
+console.log('Atualização 2!')
 var hosteltex = document.getElementById("ea")
 var hosteltex2 = document.getElementById("oea")
 var nomeJogador, oJogador
@@ -6,7 +6,6 @@ var textovalor = document.getElementById("tentativa")
 var arrayJogadores = createArrayPlayer();
 
 function createPlayer() {
-
 
   setTimeout(() => {
     oJogador = jogadores[arrayJogadores[0]];
@@ -16,31 +15,31 @@ function createPlayer() {
     hosteltex2.innerText = ''
     textovalor.value = ''
 
-  }, 230)
-
-
+  }, 730)
 }
 createPlayer()
 //var segundoRetorno = GetPlayer()
+
 function conclui() {
 
   var Verficacao = oJogador.nome.indexOf(textovalor.value.toLowerCase())
 
   if (Verficacao > -1) {
 
-    hosteltex.innerText = 'Você acertou!'
-    hosteltex2.innerText = ''
-    arrayJogadores.shift();
-    createPlayer();
+      hosteltex.innerText = 'Você acertou!'
+      hosteltex2.innerText = ''
+      arrayJogadores.shift();
+      createPlayer();
+
+
     if (arrayJogadores.length == 0) {
       FinalizarJogo()
     }
   }
 
   else {
-    hosteltex2.innerText = `Você errou!`
-    hosteltex.innerText = ''
-
+        hosteltex2.innerText = `Você errou!`
+        FinalizarJogoDerrota()
 
   }
 }
@@ -79,8 +78,9 @@ function FinalizarJogo() {
   var body = document.body
   var respostaFinal = document.getElementById("rf")
   var jogo = document.getElementById("jogo")
-  respostaFinal.removeChild(jogo)
+respostaFinal.removeChild(jogo)
   setTimeout(() => {
+
     var titulo = document.createElement('h2')
     body.appendChild(titulo)
     titulo.setAttribute('id', 'gg');
@@ -90,6 +90,26 @@ function FinalizarJogo() {
     comecarDeNovo.setAttribute('id', 'jgr')
     comecarDeNovo.innerHTML = '<a href="index.html">Jogar Novamente!<a>'
   }, 750)
+
+}
+function FinalizarJogoDerrota(){
+  var jogo = document.getElementById("jogo")
+  var body = document.body
+  var respostaFinal = document.getElementById("rf")
+  var jogo = document.getElementById("jogo")
+
+  setTimeout(() => {
+    respostaFinal.removeChild(jogo)
+    var titulo = document.createElement('h2')
+    body.appendChild(titulo)
+    titulo.setAttribute('id', 'gg');
+    titulo.innerHTML = 'Puts, você errou tenta mais uma vez aí : '
+    var comecarDeNovo = document.createElement('a')
+    body.appendChild(comecarDeNovo)
+    comecarDeNovo.setAttribute('id', 'jgr')
+    comecarDeNovo.innerHTML = '<a href="index.html">Tentar Novamente!<a>'
+
+  },2000)
 }
 document.addEventListener("keydown", function (event) {
 

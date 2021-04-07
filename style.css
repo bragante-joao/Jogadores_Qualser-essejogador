@@ -1,10 +1,12 @@
 body{
 background-color: rgba(0, 0, 0, 0.89);
+
 text-align: center;
-align-items: center;
 }
-h1{
-  color:green
+
+#ea{
+  color:green;
+
 }
 #Jogador{
   height: 460px;
@@ -12,10 +14,8 @@ h1{
 
 }
 #oea{
-  margin: auto;
 
-  height: 100px;
-  width: 300px;
+text-align: center;
   color: red;
 
 
