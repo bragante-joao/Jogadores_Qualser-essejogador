@@ -100,3 +100,4 @@ document.addEventListener("keydown", function (event) {
   }
 
 })
+console.log('Primeira Atualização Oficial aq do qual é esse jogador,mande no jp_bragante sugestões e pedidos(instagram)')
