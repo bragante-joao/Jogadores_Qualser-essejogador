@@ -43,3 +43,8 @@ h1{
 input::-webkit-input-placeholder {
   font-size:16px;
 }
+#jgr{
+  font:normal 31pt arial;
+  text-align: center;
+  border: 8px double rgba(114,114,110,0.65);
+}
