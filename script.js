@@ -84,6 +84,10 @@ function FinalizarJogo() {
     body.appendChild(titulo)
     titulo.setAttribute('id', 'gg');
     titulo.innerHTML = 'Você ganhou parabéns,você realmente entende de futebol.'
+    var comecarDeNovo = document.createElement('a')
+    body.appendChild(comecarDeNovo)
+    comecarDeNovo.setAttribute('id', 'jgr')
+    comecarDeNovo.innerHTML = '<a href="index.html">Jogar Novamente!<a>'
   }, 750)
 }
 document.addEventListener("keydown", function (event) {

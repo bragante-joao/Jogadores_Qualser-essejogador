@@ -1,1 +1,0 @@
-# Jogadores_Qualser-essejogador

@@ -18,7 +18,7 @@ var jogadores = {
   },
   5: {
     nome: ["cristiano ronaldo", "cristiano", "cr7"],
-    img: "Cr7.jpg",
+    img: "Cr7.jpg"
   },
   6: {
     nome: ["ronaldinho gaúcho", "ronaldo gaucho", "ronaldinho gaucho", "ronaldinho"],
@@ -29,4 +29,5 @@ var jogadores = {
     nome: ["di maría", "maría", "di maria", "dimaria", "dimaría"],
     img: "Dimalenda.jpg"
   }
+
 }
