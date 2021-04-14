@@ -1,10 +1,10 @@
-console.log('Atualização 2!')
+console.log('Atualização 3!')
 var hosteltex = document.getElementById("ea")
 var hosteltex2 = document.getElementById("oea")
 var nomeJogador, oJogador
 var textovalor = document.getElementById("tentativa")
 var arrayJogadores = createArrayPlayer();
-
+var acabou = false
 function createPlayer() {
 
   setTimeout(() => {
@@ -48,11 +48,14 @@ function createArrayPlayer() {
   var array = []
 
 
-  var m = 7
+  var m = 9
 
   while (m > 0) {
     array.push(m)
     m--
+    if (array.length >= 5){
+      break
+    }
   }
 
   var m = array.length, t, i;
@@ -65,6 +68,7 @@ function createArrayPlayer() {
     array[i] = t;
 
   }
+  console.log(array)
   return array
 
 }
@@ -116,8 +120,7 @@ document.addEventListener("keydown", function (event) {
   var teclado = event.keyCode
   if (teclado == 13) {
     conclui()
-
   }
 
 })
-console.log('Primeira Atualização Oficial aq do qual é esse jogador,mande no jp_bragante sugestões e pedidos(instagram)')
+console.log(',m1')
